@@ -2,7 +2,6 @@ package roman_numerals
 
 import (
 	"fmt"
-	"log"
 	"testing"
 	"testing/quick"
 )
