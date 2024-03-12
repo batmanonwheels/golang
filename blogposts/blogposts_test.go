@@ -5,7 +5,7 @@ import (
 	"testing"
 	"testing/fstest"
 
-	blogposts "github.com/batmanonwheels/blogposts"
+	blogposts "github.com/blogposts"
 )
 
 func assertPost(t *testing.T, got blogposts.Post, want blogposts.Post) {
