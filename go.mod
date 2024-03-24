@@ -1,6 +1,3 @@
 module golang
 
-go 1.21.6
-
-require (
-)
+go 1.22.1
