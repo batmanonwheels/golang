@@ -11,10 +11,12 @@ import (
 )
 
 type Post struct {
-	Title       string
-	Description string
-	Tags        []string
-	Body        string
+	Title, Description, Body string
+	Tags                     []string
+}
+
+func (p Post) SanitizedTitle() string {
+	return strings.ToLower(strings.Replace(p.Title, " ", "-", -1))
 }
 
 type StubFailingFS struct {

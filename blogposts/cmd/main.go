@@ -4,7 +4,7 @@ import (
 	"log"
 	"os"
 
-	blogposts "github.com/batmanonwheels/blogposts"
+	blogposts "github.com/blogposts"
 )
 
 func main() {
