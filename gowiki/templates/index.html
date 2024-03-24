@@ -1,0 +1,9 @@
+{{template "top"}}
+
+
+<ul class="p-2">
+  {{range .}}<li class="underline underline-offset-2 my-2"><a href="/view/{{.}}">{{.}}</a></li>{{end}}
+</ul>
+
+<p><a href="/create/" class="underline underline-offset-2 my-2">Create New Post</a></p>
+{{template "bottom"}}

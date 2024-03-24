@@ -1,0 +1,22 @@
+{{template "top" .}}
+<h1 class="text-2xl">New Page</h1>
+
+
+<form hx-post="/save/" hx-trigger="submit" class="">
+  <div>
+    <label class="text-lg">Title</label><br />
+    <textarea name="title" cols="40" class="border border-black"></textarea>
+  </div>
+  <div>
+    <label class="text-lg">Body</label><br />
+    <textarea name="body" rows="10" cols="40" class="border border-black"></textarea>
+  </div>
+  <div>
+    <input type="submit" value="Save" class="border border-black px-2 py-1">
+  </div>
+</form>
+
+<a href="/" class="underline underline-offset-2 my-2">[return]</a>
+
+
+{{template "bottom" .}}

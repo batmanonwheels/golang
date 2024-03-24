@@ -1,0 +1,20 @@
+{{template "top" .}}
+
+<h1>Editing {{.Title}}</h1>
+<br />
+<a href="/">[return]</a>
+
+<form hx-post="/save/{{.Title}}" hx-trigger="submit">
+  <div>
+    <label>Change Title</label><br />
+    <textarea name="title">{{.Title}}</textarea>
+  </div>
+  <div>
+    <label>Change Body</label><br />
+    <textarea name="body" rows="20" cols="80">{{printf "%s" .Body}}</textarea>
+  </div>
+  <div>
+    <input type="submit" value="Save">
+  </div>
+</form>
+{{template "bottom" .}}
